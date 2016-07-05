@@ -15,7 +15,16 @@
  */
 // write your code here
 
+func countriesInContinent (countryCount countryCount: Int, continent: String){
+    
+    if countryCount == 1 {
+    print("\(continent) is a continent which contains \(countryCount) country.")
+    }else{
+        print("\(continent) is a continent which contains \(countryCount) countries.")
+    }
+}
 
+countriesInContinent(countryCount: 1, continent: "Australia")
 
 
 /*: question2
@@ -25,7 +34,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting: "Hello")
 
 
 
@@ -33,7 +42,7 @@ greeting("Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {
     print("There are \(days) in \(month)")
 }
 
@@ -47,7 +56,11 @@ daysInMonth("November", days: 30)
  */
 // write your code here
 
+func printLyric(numberOfBottles numberOfBottles: Int, drinkType: String, location: String){
+    print("\(numberOfBottles) bottles of \(drinkType) on the \(location).")
+}
 
+printLyric(numberOfBottles: 99, drinkType: "Beer", location: "wall")
 
 
 /*:
